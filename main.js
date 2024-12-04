@@ -80,6 +80,8 @@ previusGalleryBtn.addEventListener('click', ()=> {
     changepreviusImage(imageContainer);
 });
 
+//mostar el modal de imagenes cuando hago click en la imagen principal
+
 
 // Cambiar imagen desktop
 
@@ -112,9 +114,10 @@ thumbnailImg4Float.addEventListener("click",()=> {
     
 })
 //--final destop
-galleryImageContainer.addEventListener("click", ()=> {
-modalGalleryDesk.style.display="none";
-})
+// galleryImageContainer.addEventListener("click", ()=> {
+//     modalGalleryDesk.style.display="none";
+// })
+
 
 const desktopBtnPrevius=document.querySelector('.modal-gallery__previus');
 const desktopBtnNext=document.querySelector('.modal-gallery__next');
@@ -197,10 +200,15 @@ function drawProductInModal() {
   
 }
 
+// function  disanbleImg() {
+//     return
+//         modalGalleryDesk.style.display="block";
+// }
+
 
 
 function changeNextImage(imgContainer){
-    if(imgIndex==4){
+    if(imgIndex===4){
         imgIndex=1;
     }
     else{
@@ -211,7 +219,7 @@ function changeNextImage(imgContainer){
 }
 
 function changepreviusImage(imgContainer){
-    if(imgIndex==1){
+    if(imgIndex===1){
         imgIndex=4;
     }
     else{

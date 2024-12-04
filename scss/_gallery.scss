@@ -2,6 +2,7 @@
 @use 'mixins';
 
 .gallery{
+    
 
     position: relative;
     &__image-container{
@@ -10,7 +11,9 @@
         width: 100%;
         background-image: url(../images/image-product-1.jpg);
         background-position-y: -35px;
-        background-size: cover;      
+        background-size: cover;
+ 
+         
         // &:hover{
         //     cursor: pointer;
         // }
